@@ -37,7 +37,7 @@ test.describe("Home Page Test", async () => {
     registeredData = await homePage.registerAndRelogin();
   });
 
-  test.only("Parabank E2E Sanity", async ({}) => {
+  test("Parabank E2E Sanity", async ({}) => {
     const newAccountId: any = await openNewAccountPage.createAnAccount(
       "SAVINGS"
     );
